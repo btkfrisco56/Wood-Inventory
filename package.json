@@ -1,0 +1,31 @@
+{
+  "name": "wood-inventory",
+  "version": "1.0.0",
+  "description": "Create a database of wood in my shop with details to help manage what actually have",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest --forceExit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btkfrisco56/Wood-Inventory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/btkfrisco56/Wood-Inventory/issues"
+  },
+  "homepage": "https://github.com/btkfrisco56/Wood-Inventory#readme",
+  "dependencies": {
+    "better-sqlite3": "^12.6.2",
+    "express": "^5.2.1",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "supertest": "^7.2.2"
+  }
+}
