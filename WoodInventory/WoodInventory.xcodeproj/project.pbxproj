@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA685CF1BA1C412E83ECFF1C /* WoodInventoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A0764F3FDA42D2AF2E5BC1 /* WoodInventoryApp.swift */; };
+		A1272E1E570A40D2AC09CE0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2611A4D3FCD44429D3DBECC /* ContentView.swift */; };
+		4235C445C45544C299A1961F /* WoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE463CECDFAD4AE58A9F9154 /* WoodItem.swift */; };
+		F7C727367EE443B59B5F0AF9 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0C5E17CA9A47838361FE11 /* CloudKitManager.swift */; };
+		E568F636DD2D48AF999A512D /* AddEditWoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1CF30DF4B74B52AF8EE147 /* AddEditWoodView.swift */; };
+		BD343B7D2B834B329BB83A95 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FEBB091DB4DD7ABC18DFD /* CameraView.swift */; };
+		B1965213DD1647608C08D653 /* WoodInventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C6924CB3754A56960AE6D7 /* WoodInventoryTests.swift */; };
+		F3BAD9B2298849F2A5DD9B71 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F38F934C034499A5110698 /* CloudKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		98A0764F3FDA42D2AF2E5BC1 /* WoodInventoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodInventoryApp.swift; sourceTree = "<group>"; };
+		F2611A4D3FCD44429D3DBECC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BE463CECDFAD4AE58A9F9154 /* WoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodItem.swift; sourceTree = "<group>"; };
+		AB0C5E17CA9A47838361FE11 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		FF1CF30DF4B74B52AF8EE147 /* AddEditWoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditWoodView.swift; sourceTree = "<group>"; };
+		134FEBB091DB4DD7ABC18DFD /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		09129DE67EED432CA341EE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F27A5914CFFE4C9ABCC0B44E /* WoodInventory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WoodInventory.entitlements; sourceTree = "<group>"; };
+		C2C6924CB3754A56960AE6D7 /* WoodInventoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodInventoryTests.swift; sourceTree = "<group>"; };
+		FAC82365CC044815B5121682 /* WoodInventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoodInventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B67DBD9CE014BBAAAE8DCCA /* WoodInventoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoodInventoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F38F934C034499A5110698 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F12BFBD232E04D0692A5D602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BAD9B2298849F2A5DD9B71 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1217178339404C3F901B91DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C72AEAA70C744AAD90993FFD /* WoodInventory */ = {
+			isa = PBXGroup;
+			children = (
+				4B6B2802932B4B8BBF02FC43 /* WoodInventory */,
+				994244D0FB4949E2A2805A99 /* WoodInventoryTests */,
+				BE34546B1DFD4AD887718D45 /* Products */,
+				C601C06D82FA41998A902A7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4B6B2802932B4B8BBF02FC43 /* WoodInventory */ = {
+			isa = PBXGroup;
+			children = (
+				98A0764F3FDA42D2AF2E5BC1 /* WoodInventoryApp.swift */,
+				F2611A4D3FCD44429D3DBECC /* ContentView.swift */,
+				BE463CECDFAD4AE58A9F9154 /* WoodItem.swift */,
+				AB0C5E17CA9A47838361FE11 /* CloudKitManager.swift */,
+				FF1CF30DF4B74B52AF8EE147 /* AddEditWoodView.swift */,
+				134FEBB091DB4DD7ABC18DFD /* CameraView.swift */,
+				09129DE67EED432CA341EE9C /* Info.plist */,
+				F27A5914CFFE4C9ABCC0B44E /* WoodInventory.entitlements */,
+			);
+			path = WoodInventory;
+			sourceTree = "<group>";
+		};
+		994244D0FB4949E2A2805A99 /* WoodInventoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2C6924CB3754A56960AE6D7 /* WoodInventoryTests.swift */,
+			);
+			path = WoodInventoryTests;
+			sourceTree = "<group>";
+		};
+		BE34546B1DFD4AD887718D45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAC82365CC044815B5121682 /* WoodInventory.app */,
+				0B67DBD9CE014BBAAAE8DCCA /* WoodInventoryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C601C06D82FA41998A902A7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9F38F934C034499A5110698 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDE35D18783C4E1391175A1C /* WoodInventory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCA4F76083AC411487D3BB81 /* Build configuration list for PBXNativeTarget "WoodInventory" */;
+			buildPhases = (
+				F12BFBD232E04D0692A5D602 /* Frameworks */,
+				55A096FB986A4805A0AF5A4C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WoodInventory;
+			productName = WoodInventory;
+			productReference = FAC82365CC044815B5121682 /* WoodInventory.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8B3F1C0D2E94A7F8C561234 /* WoodInventoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9C2D3E4F5A6B7C8D9E0F1A2 /* Build configuration list for PBXNativeTarget "WoodInventoryTests" */;
+			buildPhases = (
+				1217178339404C3F901B91DA /* Frameworks */,
+				C3D4E5F6A7B8C9D0E1F2A3B4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4E5F6A7B8C9D0E1F2A3B4C5 /* PBXTargetDependency */,
+			);
+			name = WoodInventoryTests;
+			productName = WoodInventoryTests;
+			productReference = 0B67DBD9CE014BBAAAE8DCCA /* WoodInventoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5F6A7B8C9D0E1F2A3B4C5D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FDE35D18783C4E1391175A1C = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A8B3F1C0D2E94A7F8C561234 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FDE35D18783C4E1391175A1C;
+					};
+				};
+			};
+			buildConfigurationList = F6A7B8C9D0E1F2A3B4C5D6E7 /* Build configuration list for PBXProject "WoodInventory" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C72AEAA70C744AAD90993FFD /* WoodInventory */;
+			productRefGroup = BE34546B1DFD4AD887718D45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDE35D18783C4E1391175A1C /* WoodInventory */,
+				A8B3F1C0D2E94A7F8C561234 /* WoodInventoryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55A096FB986A4805A0AF5A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA685CF1BA1C412E83ECFF1C /* WoodInventoryApp.swift in Sources */,
+				A1272E1E570A40D2AC09CE0F /* ContentView.swift in Sources */,
+				4235C445C45544C299A1961F /* WoodItem.swift in Sources */,
+				F7C727367EE443B59B5F0AF9 /* CloudKitManager.swift in Sources */,
+				E568F636DD2D48AF999A512D /* AddEditWoodView.swift in Sources */,
+				BD343B7D2B834B329BB83A95 /* CameraView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D4E5F6A7B8C9D0E1F2A3B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1965213DD1647608C08D653 /* WoodInventoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4E5F6A7B8C9D0E1F2A3B4C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDE35D18783C4E1391175A1C /* WoodInventory */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A7B8C9D0E1F2A3B4C5D6E7F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLES = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8C9D0E1F2A3B4C5D6E7F8A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLES = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9D0E1F2A3B4C5D6E7F8A9B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WoodInventory/WoodInventory.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WoodInventory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woodinventory.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0E1F2A3B4C5D6E7F8A9B0C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WoodInventory/WoodInventory.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WoodInventory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woodinventory.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1F2A3B4C5D6E7F8A9B0C1D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woodinventory.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoodInventory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WoodInventory";
+			};
+			name = Debug;
+		};
+		F2A3B4C5D6E7F8A9B0C1D2E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woodinventory.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoodInventory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WoodInventory";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6A7B8C9D0E1F2A3B4C5D6E7 /* Build configuration list for PBXProject "WoodInventory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7B8C9D0E1F2A3B4C5D6E7F8 /* Debug */,
+				B8C9D0E1F2A3B4C5D6E7F8A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCA4F76083AC411487D3BB81 /* Build configuration list for PBXNativeTarget "WoodInventory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9D0E1F2A3B4C5D6E7F8A9B0 /* Debug */,
+				D0E1F2A3B4C5D6E7F8A9B0C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9C2D3E4F5A6B7C8D9E0F1A2 /* Build configuration list for PBXNativeTarget "WoodInventoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1F2A3B4C5D6E7F8A9B0C1D2 /* Debug */,
+				F2A3B4C5D6E7F8A9B0C1D2E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = E5F6A7B8C9D0E1F2A3B4C5D6 /* Project object */;
+}
