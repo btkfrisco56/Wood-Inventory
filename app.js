@@ -1,7 +1,11 @@
 const express = require('express');
 const path = require('path');
+const rateLimit = require('express-rate-limit');
 
 const app = express();
+
+const limiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 300 });
+app.use(limiter);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
