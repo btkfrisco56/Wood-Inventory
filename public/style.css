@@ -1,0 +1,231 @@
+/* Reset & base */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f0e8;
+  color: #3a2e24;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: #5c3d2e;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+header h1 { font-size: 1.6rem; letter-spacing: .03em; }
+
+/* Buttons */
+.btn {
+  padding: .45rem .9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 600;
+  transition: opacity .15s;
+}
+.btn:hover { opacity: .85; }
+.btn-primary { background: #d4a24c; color: #fff; }
+.btn-danger  { background: #c0392b; color: #fff; }
+.btn-sm      { padding: .25rem .55rem; font-size: .78rem; }
+.btn { background: #ddd; color: #333; }
+
+/* Search */
+#search-bar { padding: 1rem 1.5rem .5rem; }
+#search {
+  width: 100%;
+  max-width: 420px;
+  padding: .5rem .75rem;
+  border: 1px solid #c8b89a;
+  border-radius: 6px;
+  font-size: .95rem;
+  background: #fff;
+}
+
+/* Grid */
+#inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+  padding: 1rem 1.5rem 2rem;
+}
+
+/* Card */
+.wood-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .15s;
+}
+.wood-card:hover { transform: translateY(-2px); }
+
+.card-photo {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #e8ddd0;
+}
+.card-photo-placeholder {
+  width: 100%;
+  height: 180px;
+  background: #e8ddd0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #b09070;
+}
+
+.card-body { padding: .85rem 1rem; flex: 1; }
+.card-species {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #5c3d2e;
+  margin-bottom: .35rem;
+}
+.card-dims {
+  font-size: .82rem;
+  color: #7a6050;
+  margin-bottom: .3rem;
+}
+.card-badge {
+  display: inline-block;
+  background: #f0e4cc;
+  color: #7a5020;
+  border-radius: 20px;
+  padding: .15rem .55rem;
+  font-size: .75rem;
+  font-weight: 600;
+  margin-bottom: .4rem;
+}
+.card-notes {
+  font-size: .82rem;
+  color: #6a5545;
+  margin-top: .3rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.card-meta {
+  font-size: .72rem;
+  color: #aaa;
+  margin-top: .5rem;
+}
+
+.card-actions {
+  padding: .6rem 1rem;
+  display: flex;
+  gap: .5rem;
+  border-top: 1px solid #f0e8dc;
+}
+
+/* Empty state */
+#empty-msg {
+  text-align: center;
+  padding: 3rem;
+  color: #9a8070;
+  font-size: 1rem;
+}
+
+/* Overlay / Modal */
+#modal-overlay, #confirm-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.55);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 100;
+}
+.hidden { display: none !important; }
+
+#modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+#modal h2 { margin-bottom: 1rem; color: #5c3d2e; }
+
+/* Form */
+.form-row { margin-bottom: .85rem; }
+.form-row label {
+  display: block;
+  font-size: .85rem;
+  font-weight: 600;
+  margin-bottom: .25rem;
+  color: #5c3d2e;
+}
+.required { color: #c0392b; }
+.form-row input,
+.form-row select,
+.form-row textarea {
+  width: 100%;
+  padding: .45rem .7rem;
+  border: 1px solid #c8b89a;
+  border-radius: 6px;
+  font-size: .9rem;
+  background: #fdf9f4;
+}
+.form-row textarea { resize: vertical; }
+
+.form-row-inline {
+  display: flex;
+  gap: .75rem;
+}
+.form-row-inline .form-row { flex: 1; }
+
+fieldset {
+  border: 1px solid #d8c8b0;
+  border-radius: 6px;
+  padding: .75rem;
+  margin-bottom: .85rem;
+}
+fieldset legend {
+  padding: 0 .4rem;
+  font-size: .82rem;
+  font-weight: 600;
+  color: #7a6050;
+}
+
+#photo-preview-wrap { margin-top: .5rem; }
+#photo-preview {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 6px;
+  display: block;
+  margin-bottom: .35rem;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: .6rem;
+  margin-top: 1rem;
+}
+
+/* Confirm dialog */
+#confirm-dialog {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  min-width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,.2);
+}
+#confirm-dialog p { margin-bottom: 1rem; font-size: 1rem; }
+
+/* Qty badge on card */
+.card-qty {
+  font-weight: 700;
+  color: #5c3d2e;
+}

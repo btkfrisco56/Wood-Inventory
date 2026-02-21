@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wood Inventory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🪵 Wood Inventory</h1>
+    <button id="btn-add" class="btn btn-primary">+ Add Wood</button>
+  </header>
+
+  <main>
+    <div id="search-bar">
+      <input type="text" id="search" placeholder="Search by species, source, notes…" />
+    </div>
+    <div id="inventory-grid"></div>
+    <p id="empty-msg" class="hidden">No wood records yet. Click "+ Add Wood" to get started.</p>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal-overlay" class="hidden">
+    <div id="modal">
+      <h2 id="modal-title">Add Wood</h2>
+      <form id="wood-form" enctype="multipart/form-data">
+        <input type="hidden" id="wood-id" />
+
+        <div class="form-row">
+          <label for="species">Species <span class="required">*</span></label>
+          <input type="text" id="species" name="species" placeholder="e.g. White Oak" required />
+        </div>
+
+        <fieldset>
+          <legend>Dimensions (inches)</legend>
+          <div class="form-row-inline">
+            <div class="form-row">
+              <label for="thickness">Thickness</label>
+              <input type="number" id="thickness" name="thickness" step="0.125" min="0" placeholder="e.g. 1.5" />
+            </div>
+            <div class="form-row">
+              <label for="width">Width</label>
+              <input type="number" id="width" name="width" step="0.125" min="0" placeholder="e.g. 6" />
+            </div>
+            <div class="form-row">
+              <label for="length">Length</label>
+              <input type="number" id="length" name="length" step="0.25" min="0" placeholder="e.g. 96" />
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-row">
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1" />
+        </div>
+
+        <div class="form-row">
+          <label for="condition">Condition</label>
+          <select id="condition" name="condition">
+            <option value="">— select —</option>
+            <option value="Rough">Rough</option>
+            <option value="S2S">S2S (surfaced two sides)</option>
+            <option value="S4S">S4S (surfaced four sides)</option>
+            <option value="Reclaimed">Reclaimed</option>
+            <option value="Green">Green (wet)</option>
+            <option value="Kiln Dried">Kiln Dried</option>
+            <option value="Air Dried">Air Dried</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="source">Source</label>
+          <input type="text" id="source" name="source" placeholder="e.g. Local mill, salvage yard" />
+        </div>
+
+        <div class="form-row">
+          <label for="notes">Notes</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Grain pattern, figure, defects…"></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="photo">Photo</label>
+          <input type="file" id="photo" name="photo" accept="image/*" capture="environment" />
+          <div id="photo-preview-wrap" class="hidden">
+            <img id="photo-preview" src="" alt="Current photo" />
+            <button type="button" id="btn-remove-photo" class="btn btn-danger btn-sm">Remove photo</button>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" id="btn-cancel" class="btn">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Confirm delete dialog -->
+  <div id="confirm-overlay" class="hidden">
+    <div id="confirm-dialog">
+      <p>Delete this wood record?</p>
+      <div class="form-actions">
+        <button id="btn-confirm-cancel" class="btn">Cancel</button>
+        <button id="btn-confirm-delete" class="btn btn-danger">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

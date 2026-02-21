@@ -1,0 +1,4 @@
+node_modules/
+wood.db
+public/uploads/*
+!public/uploads/.gitkeep
